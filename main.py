@@ -12,7 +12,7 @@ def downlod_wallpaper(query, img_count = 30, path="wallpapers", orientation= "la
         try:
 
             url = 'https://api.unsplash.com/photos/random?orientation='+orientation+'&query='+query_words+'&count=30'  # unsplash query url.
-            headers = {'Authorization': 'Client-ID 2d4a979f27dbdf7734241d4ebabb2abb2ccde8f4d2b4f63449235af819144ba5'}  # unsplash api auth
+            headers = {'Authorization': 'Client-ID replace_text_with_unsplash_api_auth_id'}  # unsplash api auth
 
             r = re.get(url, headers=headers)
             #print(r.status_code)
